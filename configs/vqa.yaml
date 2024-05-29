@@ -1,4 +1,4 @@
-vqa_root: '/kaggle/working/BLIP_VQA_Vietnamese/BLIP_VietNamese/preprocessing/Images' #followed by train2014/
+vqa_root: '/kaggle/input/images-blip/Images' #followed by train2014/
 train_files: ['vqa_train','vqa_val']
 vg_root: ''
 ann_root: 'annotation'
@@ -8,12 +8,12 @@ pretrained: ''
 
 # size of vit model; base or large
 vit: 'base'
-batch_size_train: 6
-batch_size_test: 6
+batch_size_train: 4
+batch_size_test: 4
 vit_grad_ckpt: False
 vit_ckpt_layer: 0
 init_lr: 2e-5
-med_config: '/kaggle/working/BLIP_VQA_Vietnamese/configs/med_config.json'
+med_config: '/kaggle/working/BLIP_VietNameseBERTMultiligual/configs/med_config.json'
 image_size: 384
 
 k_test: 128
